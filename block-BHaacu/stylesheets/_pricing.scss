@@ -1,0 +1,85 @@
+.pricing-page {
+  .hero {
+    background-color: #dc4345;
+    color: #ffffff;
+    p {
+      text-align: center;
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+  .pricing {
+    background-color: #f2f2f2;
+    p {
+      text-align: center;
+      font-size: 1rem;
+      color: rgb(110, 110, 110);
+      margin-bottom: 3rem;
+    }
+  }
+
+  .program {
+    background-color: #ffffff;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 2rem;
+    text-align: center;
+    h3 {
+      font-weight: 800;
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    ul {
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+    }
+
+    li {
+      color: rgb(54, 54, 54);
+      font-size: 1rem;
+    }
+   a:hover{
+      color: #fff;
+      border-color: #fff;
+      background-color: #dc4345;
+   }
+   
+  }
+
+.faqs{
+    h3{
+        font-weight: 800;
+        text-align: center;
+    }
+    p{
+        color:rgb(102, 101, 101);
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.faq{
+    padding: 1rem;
+    border: 1px solid rgb(161, 160, 160);
+    border-radius: .15rem;
+    margin-bottom: 1.5rem;
+    h6{
+        font-size: .85rem;
+        font-weight:500;
+        margin-bottom: .6rem;
+    }
+    p{
+        text-align: start;
+        font-size: .8rem;
+        margin: .2rem auto;
+    }
+}
+
+}
