@@ -88,3 +88,38 @@ h6 {
   background-color: #fff;
   border: 1px solid #dc4345;
 }
+
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .flex-20,
+  .flex-25,
+  .flex-30,
+  .flex-32,
+  .flex-40,
+  .flex-48,
+  .flex-50,
+  .flex-60,
+  .flex-100 {
+    flex: 0 1 100%;
+    margin-bottom: 1rem;
+   
+  }
+
+  .wrap{
+    flex-wrap: wrap;
+  }
+}
+
+.hidden{
+  height:8.9rem;
+}
+
+@media all and (max-width: 1080px) {
+.hidden{
+  height:8rem;
+}
+}
