@@ -143,5 +143,15 @@
     ::-webkit-scrollbar {
       display: none;
     }
+img{
+  z-index: 90;
+}
   }
+
+  @media all and (max-width: 768px){
+   .quotes a{
+   margin-top: 2rem;
+   }
+   }
+
 }

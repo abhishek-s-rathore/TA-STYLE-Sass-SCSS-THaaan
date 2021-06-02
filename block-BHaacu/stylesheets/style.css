@@ -374,6 +374,47 @@ h6 {
   border: 1px solid #dc4345;
 }
 
+@media all and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .flex-20,
+  .flex-25,
+  .flex-30,
+  .flex-32,
+  .flex-40,
+  .flex-48,
+  .flex-50,
+  .flex-60,
+  .flex-100 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 1rem;
+  }
+  .wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.hidden {
+  height: 8.9rem;
+}
+
+@media all and (max-width: 1080px) {
+  .hidden {
+    height: 8rem;
+  }
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
 .header-contact {
   background-color: #dc4345;
   padding: 0.8rem 0;
@@ -392,8 +433,6 @@ h6 {
 
 .header-main {
   background-color: #f2f2f2;
-  height: 100px;
-  overflow: hidden;
 }
 
 .header-main .brand {
@@ -418,6 +457,129 @@ h6 {
           box-sizing: border-box;
   background-color: #eb5f61;
   color: #ffffff;
+}
+
+.header-main .active {
+  background-color: #eb5f61;
+  color: #ffffff;
+}
+
+.header-main .sub-menu-box {
+  position: relative;
+}
+
+.header-main .sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #dddddd;
+  width: 10rem;
+  top: 5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+}
+
+.header-main .sub-menu a {
+  color: #000;
+  font-weight: 400;
+  padding: 1rem;
+  width: 100%;
+}
+
+.header-main .sub-menu a:hover {
+  color: #fff;
+  margin-left: 0;
+  text-align: center;
+}
+
+.header-main .sub-menu .fas {
+  position: absolute;
+  color: #dddddd;
+  font-size: 2rem;
+  top: -1.25rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-shadow: black;
+}
+
+.header-main .sub-menu-box:hover .sub-menu {
+  display: inline-block;
+}
+
+.header-main .sub-menu .active2 {
+  color: #ffffff;
+  margin-left: 0;
+  text-align: center;
+  background-color: #dc4345;
+}
+
+.header-main input,
+.header-main label {
+  display: none;
+}
+
+@media all and (max-width: 1080px) {
+  .header-main nav {
+    display: none;
+  }
+  .header-main label {
+    display: inline-block;
+  }
+  input:checked ~ nav {
+    position: fixed;
+    top: 6.2rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #dc4345;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  label {
+    display: inline-block;
+  }
+  .wrap2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  input:checked ~ nav {
+    position: fixed;
+    top: 9.9rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #dc4345;
+  }
+  input:checked ~ nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
 }
 
 footer {
@@ -626,6 +788,16 @@ footer .footer-copyright small {
 
 .home-page .cleints ::-webkit-scrollbar {
   display: none;
+}
+
+.home-page .cleints img {
+  z-index: 90;
+}
+
+@media all and (max-width: 768px) {
+  .home-page .quotes a {
+    margin-top: 2rem;
+  }
 }
 
 .about-page .hero {
@@ -861,6 +1033,16 @@ footer .footer-copyright small {
   margin: 1rem auto;
 }
 
+@media all and (max-width: 768px) {
+  .service-page .deals a {
+    margin-top: 2rem;
+  }
+  .service-page .products .base2 {
+    border-bottom: 2px solid #747474;
+    margin-bottom: 3rem;
+  }
+}
+
 .contact-page .hero {
   background-color: #dc4345;
   color: #ffffff;
@@ -986,6 +1168,12 @@ footer .footer-copyright small {
 
 .contact-page form textarea:focus {
   border: 2px solid green;
+}
+
+@media all and (max-width: 768px) {
+  .contact-page form {
+    padding-left: 0;
+  }
 }
 
 .error-page .hero {

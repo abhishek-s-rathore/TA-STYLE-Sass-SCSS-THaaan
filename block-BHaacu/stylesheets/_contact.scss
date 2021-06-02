@@ -94,4 +94,12 @@ a{
       }
     }
   }
+
+
+
+  @media all and (max-width: 768px){
+   form{
+     padding-left: 0;
+   }
+  }
 }

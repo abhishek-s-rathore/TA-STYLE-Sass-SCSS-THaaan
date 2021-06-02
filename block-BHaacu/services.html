@@ -24,8 +24,8 @@
     <!--Header-->
     <header>
       <div class="header-contact">
-        <div class="container flex justify-between align-center">
-          <div class="flex justify-between align-center reach">
+        <div class="container flex justify-between align-center wrap2">
+          <div class="flex justify-center align-center reach flex-40">
             <a href="tel:+919389732668"
               ><i class="fas fa-phone"></i> <span>+91-9389732668</span></a
             >
@@ -33,8 +33,8 @@
               ><i class="fas fa-envelope"></i> <span>info@yourmail.com</span></a
             >
           </div>
-          <nav>
-            <ul class="flex justify-between align-center">
+          <nav  class="flex-25">
+            <ul class="flex justify-center align-center">
               <li>
                 <a href="https://www.facebook.com/" target="_blank"
                   ><i class="fab fa-facebook-square"></i
@@ -62,18 +62,37 @@
       <div class="header-main">
         <div class="container flex justify-between align-center">
           <div class="brand"><span>Uni</span>TECH</div>
+          <input type="checkbox" id="toggle" />
+          <label for="toggle"><i class="fas fa-bars"></i></label>
           <nav>
             <ul class="flex justify-between align-center">
-              <li><a href="index">Home</a></li>
-              <li><a href="about">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li>
-                <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#" class="active">Services</a></li>
+              
+              <li class="sub-menu-box">
+                <a href="#"> Pages<i class="fas fa-chevron-down"></i> </a>
+                <div class="sub-menu">
+                  <ul>
+                    <li><a href="pricing.html"> Pricing</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="error.html"> 404 Error</a></li>
+                  </ul>
+                  <i class="fas fa-caret-up"></i>
+                </div>
               </li>
-              <li>
-                <a href="#">Blog <i class="fas fa-chevron-down"></i></a>
+
+              <li class="sub-menu-box">
+                <a href="#">Blogs <i class="fas fa-chevron-down"></i></a>
+                <div class="sub-menu">
+                  <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blog Single</a></li>
+                  </ul>
+                  <i class="fas fa-caret-up"></i>
+                </div>
               </li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </nav>
         </div>
@@ -81,6 +100,7 @@
     </header>
 
     <!--Main-->
+    <div class="hidden"></div>
     <main class="service-page">
       <section class="hero padding">
         <h2>Services</h2>
@@ -88,7 +108,7 @@
       </section>
 
       <section class="services padding">
-        <article class="container flex justify-between align-center">
+        <article class="container flex justify-between align-center wrap">
           <div class="flex-48">
             <span>Our Services</span>
             <h3>
@@ -160,7 +180,7 @@
               Dignissimos explicabo ipsam dolorum vitae temporibus.
             </p>
           </div>
-          <div class="flex-30">
+          <div class="flex-30 base2">
             <div class="image-cont">
               <img
                 src="./assets/media/vuejs.svg"
@@ -174,7 +194,7 @@
               Dignissimos explicabo ipsam dolorum vitae temporibus.
             </p>
           </div>
-          <div class="flex-30">
+          <div class="flex-30 base2">
             <div class="image-cont">
               <img
                 src="./assets/media/react.svg"
@@ -206,7 +226,7 @@
       </section>
 
       <section class="deals padding">
-        <div class="container flex justify-between align-center">
+        <div class="container flex justify-between align-center wrap">
           <p>
             <span>Best Deals | </span> Lorem ipsum, dolor sit amet consectetur
             adipisicing elit, Dignissimos explicabo ipsam dolorum.
@@ -223,7 +243,7 @@
           Dignissimos explicabo ipsam dolorum vitae temporibus.
         </p>
 
-        <article class="container flex justify-between align-center">
+        <article class="container flex justify-between align-center wrap">
           <div class="flex-48">
             <div class="image-box">
               <img
@@ -258,8 +278,8 @@
 
     <!--Footer-->
     <footer>
-      <div class="footer-main flex justify-between align-start container">
-        <div class="reach-us">
+      <div class="footer-main flex justify-between align-start wrap container">
+        <div class="reach-us flex-25">
           <h4>Reach Us</h4>
           <nav>
             <ul class="flex flex-column justify-start align-start">
@@ -285,7 +305,7 @@
           </nav>
         </div>
 
-        <div class="site-links">
+        <div class="site-links flex-20">
           <h4>Site Links</h4>
           <nav>
             <ul class="flex flex-column justify-start align-start">
@@ -297,37 +317,37 @@
             </ul>
           </nav>
         </div>
-        <div class="quick-links">
+        <div class="quick-links flex-20">
           <h4>Quick Links</h4>
           <nav>
             <ul class="flex flex-column justify-start align-start">
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
               <li><a href="privacy.html">Services</a></li>
               <li><a href="terms.html">Portfolio</a></li>
             </ul>
           </nav>
         </div>
-        <div class="follow-us">
+        <div class="follow-us flex-20">
           <h4>Follow Us</h4>
           <nav>
-            <ul class="flex justify-between align-start">
-              <li>
+            <ul class="flex justify-between  align-start wrap">
+              <li class="flex-20">
                 <a href="https://www.facebook.com/" target="_blank"
                   ><i class="fab fa-facebook-square"></i
                 ></a>
               </li>
-              <li>
+              <li class="flex-20">
                 <a href="https://www.instagram.com/" target="_blank"
                   ><i class="fab fa-instagram-square"></i
                 ></a>
               </li>
-              <li>
+              <li class="flex-20">
                 <a href="https://www.twitter.com/" target="_blank"
                   ><i class="fab fa-twitter-square"></i
                 ></a>
               </li>
-              <li>
+              <li class="flex-20">
                 <a href="https://dribbble.com/" target="_blank"
                   ><i class="fab fa-dribbble-square"></i
                 ></a>

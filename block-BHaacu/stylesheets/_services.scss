@@ -94,4 +94,21 @@
       width: 20%;
       margin: 1rem auto;
   }
+
+
+  @media all and (max-width: 768px){
+    .deals a{
+    margin-top: 2rem;
+    }
+
+.products{
+  .base2 {
+    border-bottom: 2px solid rgb(116, 116, 116);
+    margin-bottom: 3rem;
+  }
+}
+
+
+    }
+
 }
