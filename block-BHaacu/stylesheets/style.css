@@ -529,7 +529,7 @@ header {
   }
   input:checked ~ nav {
     position: fixed;
-    top: 6.2rem;
+    top: 7.5rem;
     bottom: 0;
     left: 0;
     right: 0;
