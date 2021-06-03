@@ -1,0 +1,114 @@
+.service-page {
+  .hero {
+    background-color: #dc4345;
+    color: #ffffff;
+    p {
+      text-align: center;
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+
+  .services {
+    span {
+      color: #dc4345;
+    }
+    h3 {
+      font-weight: 700;
+    }
+    p {
+      color: rgb(116, 116, 116);
+      padding-top: 1rem;
+    }
+  }
+
+  .products {
+    background-color: #f2f2f2;
+    h4 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    p {
+      color: rgb(116, 116, 116);
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 1rem auto;
+    }
+
+    h5 + p {
+      text-align: start;
+    }
+
+    .image-cont {
+      width: 40%;
+      margin-left: 0;
+    }
+
+    .base {
+      border-bottom: 2px solid rgb(116, 116, 116);
+      margin-bottom: 3rem;
+    }
+  }
+
+  .deals {
+    background-color: #dc4345;
+    color: #ffffff;
+    p {
+      font-size: 1rem;
+    }
+    span {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+
+  .awarded {
+    h3 {
+        font-weight: 700;
+        text-align: center;
+        margin: .5rem auto;
+    }
+    p{
+        text-align: center;
+        color:rgb(116, 116, 116);
+        font-size: 1rem;
+    }
+  }
+
+  article{
+       margin-top: 3rem; 
+  }
+
+  .image-box{
+      width: 20%;
+      margin: 1rem auto;
+  }
+
+
+  @media all and (max-width: 768px){
+    .deals a{
+    margin-top: 2rem;
+    }
+
+.products{
+  .base2 {
+    border-bottom: 2px solid rgb(116, 116, 116);
+    margin-bottom: 3rem;
+  }
+}
+
+
+    }
+
+}

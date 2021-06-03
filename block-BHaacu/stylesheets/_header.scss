@@ -1,0 +1,162 @@
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header-contact {
+  background-color: #dc4345;
+  padding: 0.8rem 0;
+  vertical-align: middle;
+
+  .reach {
+    a {
+      padding-right: 2rem;
+      color: #ffffff;
+    }
+  }
+
+  nav {
+    a {
+      margin-left: 2rem;
+      color: #ffffff;
+    }
+  }
+}
+
+.header-main {
+  background-color: #f2f2f2;
+
+  .brand {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 800;
+    span {
+      color: #dc4345;
+    }
+  }
+
+  a {
+    color: black;
+    margin-left: 1.5rem;
+    display: inline-block;
+    padding: 2rem 0.5rem;
+    &:hover {
+      box-sizing: border-box;
+      background-color: #eb5f61;
+      color: #ffffff;
+    }
+  }
+
+  .active {
+    background-color: #eb5f61;
+    color: #ffffff;
+  }
+
+  .sub-menu-box {
+    position: relative;
+  }
+
+  .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #dddddd;
+    width: 10rem;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+
+  .sub-menu a {
+    color: #000;
+    font-weight: 400;
+    padding: 1rem;
+    width: 100%;
+    &:hover {
+      color: #fff;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+
+  .sub-menu .fas {
+    position: absolute;
+    color: #dddddd;
+    font-size: 2rem;
+    top: -1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: black;
+  }
+
+  .sub-menu-box:hover .sub-menu {
+    display: inline-block;
+  }
+
+  .sub-menu .active2 {
+    color: #ffffff;
+    margin-left: 0;
+    text-align: center;
+    background-color: #dc4345;
+  }
+
+  input,
+  label {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .header-main nav {
+    display: none;
+  }
+
+  .header-main label {
+    display: inline-block;
+  }
+
+  input:checked ~ nav {
+    position: fixed;
+    top: 7.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #dc4345;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  .wrap2 {
+    flex-wrap: wrap;
+  }
+
+  input:checked ~ nav {
+    position: fixed;
+    top: 9.9rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #dc4345;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: center;
+    }
+  }
+}
